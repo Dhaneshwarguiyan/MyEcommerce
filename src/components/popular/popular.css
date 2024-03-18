@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    height: 90vh;
+    min-height: 100vh;
 
 }
 
@@ -11,6 +11,7 @@
     color: #171717;
     font-size: 50px;
     font-weight: 600;
+    margin-top: 50px;
 }
 
 .popular hr{
@@ -25,4 +26,35 @@
     display: flex;
     gap: 30px;
     
+}
+
+@media (max-width:1550px) and (min-width:1350px){ 
+    .popular-item{
+        margin-top: 100px;
+        gap: 40px;
+    }
+}
+@media(max-width:1350px){
+    .popular{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .popular-item{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 50px;
+        column-gap: 100px;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:850px){
+    .popular-item{
+        column-gap: 40px;
+    }
+}
+@media(max-width:760px){
+    .popular-item{
+    column-gap: 20px;
+
+    }
 }

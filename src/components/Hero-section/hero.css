@@ -1,19 +1,21 @@
 
 .hero{
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-right: auto;
+    overflow-x: hidden;
 }
 
 .hero-left{
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 120px 180px;
     justify-content: center;
     gap: 20px;
-    padding: 180px;
     line-height: 1.1;
 }
 .hero-left h2{
@@ -54,4 +56,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 100px;
+}
+
+@media (max-width:1400px ) and (min-width:950px){
+    .hero-left{
+        transform: translateY(-50px);
+    }
+    .hero-left h2{
+        font-size: 24px;
+    }
+    .hero-text{
+        font-size: 70px;
+    }
+    .hero-right{
+        /* height: 300px; */
+        width: 200px;
+    }
+    .hero-right img{
+        height: 700px;
+        transform: translateY(-50px);
+    }
+}
+@media (max-width:950px) {
+    .hero{
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .hero-right{
+        display: none;
+    }
+    .hero-left{
+        transform: translateY(-100px);
+        padding-bottom: 10px;
+    }
+    .hero-text{
+        font-size: 90px;
+    }
 }
