@@ -12,9 +12,9 @@ const Hero = ()=>{
                 <div>
                 <div className='hero-hand'>
                     <p className='hero-text'>new</p> <img src={hand} alt="hand" width='105px'/> 
-                    </div>
-                    <p className='hero-text'>collections</p> 
-                    <p className='hero-text'>for everyone</p>
+                </div>
+                <p className='hero-text'>collections</p> 
+                <p className='hero-text'>for everyone</p>
                 
                 </div>
                 

@@ -53,3 +53,34 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+@media (max-width: 550px) {
+    .newsletter{
+        min-width: 90vw;
+        min-height: 60vh;
+        padding: 0 5px;
+        font-size: 30px;
+        background: linear-gradient(180deg,#fde1ff,#e1ffea22 90%);
+    }
+    .newsletter h1{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .newsletter p{
+        font-size: 0.5em;
+        text-align: center;
+    }
+    .newsletter div{
+        width: 85vw;
+        height: 60px;
+    }
+    .newsletter div input{
+        width: 60%;
+    }
+    .newsletter div button{
+        width: 40%;
+        height: 60px;
+        font-size: 0.71em;
+        font-weight: 200;
+    }
+}

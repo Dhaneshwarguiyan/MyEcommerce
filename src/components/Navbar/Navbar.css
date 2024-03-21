@@ -8,21 +8,25 @@
 .nav{
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
-    /* height: 80px; */
 }
 
 .nav-logo div{
     justify-content: space-between;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 550;
+    font-size: 3vmax;
 }
-
+.menu-icon{
+    display: none;
+}
 .nav-tiles{
    width: 350px;
    list-style: none;
    cursor: pointer;
+}
+.nav-tiles-drop{
+    display: none;
 }
 
 .login-btn{
@@ -74,4 +78,64 @@
 
 .l{
     text-decoration: none;
+}
+
+@media (max-width:550px) {
+    .nav{
+        width: 100vw;
+        height: 60px;
+        padding: 4vw 5vw;
+    }
+    .nav-logo img{
+        width: 9vw;
+    }
+    .nav-tiles{
+        display: none;
+    }
+    .nav-login{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 2rem;
+    }
+
+    @keyframes opacityTransition {
+        from{
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-tiles-drop.active{
+        opacity: 1;
+        width: 100vw;
+        background: white;
+        z-index: 11;
+        position: absolute;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+        animation: opacityTransition 0.5s ease;
+    }
+    /* .nav-tiles-drop.inactive{
+        opacity: 0;
+        visibility: hidden;
+        
+        animation: opacityTransitionO  0.5s ease;
+    } */
+    .nav-disk-drop{
+        list-style: none;
+    }
+    .l{
+        font-size: 18px;
+        color:black;
+    }
 }

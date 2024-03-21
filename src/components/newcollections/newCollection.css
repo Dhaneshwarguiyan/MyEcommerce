@@ -26,3 +26,12 @@
     margin-top: 50px;
     gap: 20px;
 }
+
+@media (max-width:550px) {
+    .new-collection h1{
+        font-size: 30px;
+    }
+    .collection{
+        grid-template-columns: auto auto;
+    }
+}
